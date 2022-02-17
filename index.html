@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale= 1.0">
+	<meta name="description" content="web design, aft">
+	<meta name="author" content="John Trieu">
+	<title>Trieu WEB</title>
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<style>
+		#showcase{
+			background-image: url('images/nen.png');
+     		background-repeat: no-repeat;
+     		background-attachment: scroll;
+     		background-size: 100% auto;
+     		animation: drop 2s ease;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="branding">
+				<h1><span class="highlight">Trieu</span> web Design</h1>
+			</div>
+
+			<nav>
+				<ul>
+					<li class="current"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="services.html">Services</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="showcase">
+		<div class="container">
+			<h1>Affordate Professional Web Design</h1>
+			<p>This amazing, that's all thing web can do together. it'll be fine.</p>
+		</div>
+	</section>
+
+	<section id="newsletter">
+		<div class="container">
+			<h1>Subscriber To Our Newsletter</h1>
+			<form>
+				<input type="email" onchange="change()" placeholder="Enter your email" name="email" id="email">
+				<script type="text/javascript">
+					var email=document.getElementById('email');
+
+					const change=()=>{
+						let password=email.value;
+						//const password = "hackme@email.com";
+						let hiden=password.substr(0,4).padEnd(password.length, "*");
+						// ***kme
+
+						email.value=hiden;
+						console.log(hiden);
+					}
+				</script>
+				<button type="submit" class="button_1">Subsriber</button>
+			</form>
+		</div>
+	</section>
+
+	<section id="boxes">
+		<div class="container">
+			<div class="box">
+				<img src="./images/logo_html.png">
+				<h3>HTML Markup</h3>
+				<p>This Amazing, war of the world is comming</p>
+			</div>
+			<div class="box">
+				<img src="./images/logo_css.jpg">
+				<h3>CSS Styling</h3>
+				<p>This Amazing, war of the world is comming</p>
+			</div>
+			<div class="box">
+				<img src="./images/logo_brush.png">
+				<h3>Graphic Design</h3>
+				<p>This Amazing, war of the world is comming</p>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<p>Trieu Web Design, copyright @</p>
+	</footer>
+
+
+</body>
+</html>
